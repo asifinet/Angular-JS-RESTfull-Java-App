@@ -75,7 +75,7 @@
      <div id="FirstRecord" class="panelbuttons size-16 icon ion-ios-skipbackward" ng-click ="RecodPaging(count=0)"></div>
      <div id="PrevRecord" class="panelbuttons size-16 icon ion-arrow-left-b" ng-click ="RecodPaging(count>0?count=count-1:count-1)"></div>
      <div id="NextRecord" class="panelbuttons size-16 icon ion-arrow-right-b" ng-click =" RecodPaging((count <= recordLength)?count=count+1:recordLength)"></div>
-     <div id="LastRecord" class="panelbuttons size-16 icon ion-ios-skipforward" ng-click ="RecodPaging(recordLength-1)"></div>
+     <div id="LastRecord" class="panelbuttons size-16 icon ion-ios-skipforward" ng-click ="RecodPaging(recordLength>0?count=recordLength-1:count=count-1)"></div>
     
 <!--  RecodPaging((count <= recordLength)?count=count+1:recordLength)">{{ count }}{{ recordLength }} --> 
  </div>
