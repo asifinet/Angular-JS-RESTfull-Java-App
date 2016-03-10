@@ -10,7 +10,7 @@ Intro :-
 
 Java CRUD based RESTfull Web Server API and Web Service Client have been developed to provide the client 
 software an ability to retrive,Maniuplate e.g INSERT,UPDATE, DELETE , Query the company and owner related 
-data stored on the MySQL database server through the RESTfull Web Service end-points, which they may be located 
+data stored on the MySQL database server through the use of RESTfull Web Service end-points architecture style, which they may be located 
 somewhere in remote location.
 
 		TOC
@@ -41,7 +41,7 @@ A. Technology Stack
 		 e.Hibernate/JPA 4.3.5.Final
 		 f.JDBC
 		 j.log4j  1.2.17
-		 h.RESTful API
+
 
 	2.Angular JS Client Technologies
 		  a.JRE 1.8
