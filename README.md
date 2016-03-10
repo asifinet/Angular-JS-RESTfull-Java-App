@@ -75,7 +75,7 @@ C. System Requirements.
    
 D. HTTP Web service API CRUD Endpoints Matrix.
 
-												  Supported
+									Supported
 		Sno. URI                                               Function Area  Opperation       By ID   HTTP Method  	
 		=================================================================================================================
 		1.  http://localhost:8080/CompRESTful/company/              Company   Add/Query/Delete compid  GET,POST,DELETE 
