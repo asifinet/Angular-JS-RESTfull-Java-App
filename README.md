@@ -482,6 +482,7 @@ O. JSON Output Test Results with SOAP UI
 
 
 3. All owners
+
 		Request -http://localhost:8080/CompRESTful/company/owner/
 		Output  -[{"ownerId":157,"ownerName":"Iftikhar Ahmed Bajwa","ownerAddress":"12-3-3 Condo","ownerCityName":"Karachi ","ownerEmail":"asif@hotmailcom","ownerPhone":"934923033","ownerCompid":19,"ownerCountryName":"Pakistan"}]
 
@@ -513,11 +514,11 @@ O. JSON Output Test Results with SOAP UI
 		   "message": "Owner deleted Successfully !"
 		}
 		
+
 7. Update Owner by Owner Id 	
 		
 		Request - http://localhost:8080/CompRESTful/company/owner/update/
 		PUT Method
-
 		from :-  {"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
 		to   :- {"ownerId":184,"ownerName":"Muhammad Asif","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
 
