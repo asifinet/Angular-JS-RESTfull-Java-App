@@ -9,8 +9,8 @@ Author  - Asif Muhammad
 Intro :- 
 
 Java CRUD based RESTfull Web Server API and Web Service Client have been developed to provide the client 
-software an ability to retrive,Maniuplate e.g INSERT,UPDATE, DELETE and Query the company and owner related 
-data stored on the MySQL database server through the RESTfull Web Service end-points, they may be located 
+software an ability to retrive,Maniuplate e.g INSERT,UPDATE, DELETE , Query the company and owner related 
+data stored on the MySQL database server through the RESTfull Web Service end-points, which they may be located 
 somewhere in remote location.
 
 		TOC
@@ -31,7 +31,7 @@ somewhere in remote location.
 		N. Mapped endpoint Java Functions and Parameters.
 		O. JSON Output Test Results with SOAP UI.
 
-A. Technology Stack
+ Technology Stack
 
 1. Web Server API.
 	 a.Java
@@ -55,7 +55,7 @@ A. Technology Stack
 
 3.  Build Configuration using Maven pom.xml
 
-B. App Components
+ App Components
    
    1. RESTfull Server Java Web API
       a. This Server is build and tested with the below client in order to ensure it works without any error w.r.t.o Service calls 		 from the client.
@@ -64,7 +64,7 @@ B. App Components
 	  The Client is build and tested on Chrome and IE Explore version 10. 
 	   To run the App need to point the URL to http://localhost:8080/CompRESTful_Client/
 
-C. System Requirements.
+ System Requirements.
    1.JDK 1.7/JRE 1.8 
    2.MySQL 5.7 Database
    3.Tomcat Server 7.5
