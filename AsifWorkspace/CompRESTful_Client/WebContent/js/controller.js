@@ -180,7 +180,7 @@
                         ownerPhone: $scope.ownerPhone,
                         ownerCompid: $scope.ownerCompid
                     	});
-                    	 },300);
+                    	 },100);
                     	 $("#NeWRecoFlag").val('0');
                          $("#ScreenStatus").text('Owner Record Sucessfully Added');
                          console.log('Saving Owner Record');
@@ -203,7 +203,7 @@
                         var response2 = Owner.query({compid: $scope.ownerCompid}, function() {
                             $scope.listOwner = response2;
                         });
-                    	  }, 300);
+                    	  }, 500);
                     } catch (e) {
                         if (e instanceof SyntaxError) {
                             $("#ScreenStatus").text('Unable to Query this Record');
@@ -557,7 +557,7 @@
                             // Following block of code actually will fetch the value from the 
                             //JSON arary and assign to respective field in the company master form.
                        
-                    	
+                    	   //console.log("I Searched All Showing one record"+ response);
                     	    $scope.recordLength = response.length;
                             $scope.compid = response[0].compId;
                             $scope.compName = response[0].compName;
@@ -672,9 +672,9 @@
                         //JSON arary and assign to respective field in the company master form.
                    try {
                 	   $scope.CompanyLength = response.length;
-                	    console.log($scope.CompanyLength);
+                	    //console.log($scope.CompanyLength);
                 	  var CompanyLength= $scope.CompanyLength-1;
-                	    console.log('COMPANY LENGTH - '+CompanyLength);
+                	   // console.log('COMPANY LENGTH - '+CompanyLength);
                         $scope.compid = response[CompanyLength].compId;
                         $scope.compName = response[CompanyLength].compName;
                         $scope.compAddress = response[CompanyLength].compAddress;
@@ -730,7 +730,8 @@
         }
 
         $scope.deleteCompanyRecord = function(event) {
-        	var ownerCompId =$scope.compid;
+        	 $scope.compid = $('#CompanyID').val();
+        	var ownerCompId =$('#CompanyID').val();
             $('#DilogYesButton').click(function() {
                 DeleteFlag = true;
                 if (DeleteFlag) {
@@ -742,7 +743,7 @@
                             $("#ScreenStatus").text('Company Record Sucessfully Deleted');
                             console.log('Company Record Sucessfully Deleted')
                         });
-                		 },200);
+                		 });
                 		 
                 		 
                     } catch (e) {
@@ -761,14 +762,16 @@
                                      console.log('Owner Record Sucessfully Deleted');
                                
                                  });
-                         });
+                         },200);
                       	  } catch (e) {
                                 if (e instanceof SyntaxError) {
                                     $("#ScreenStatus").text('Unable to Delete Owner Record');
                                     console.log("Unable to Delete Owner Record");
                                 }
-                            }     
+                            }   
+                      	$timeout(function() {
                 	  $scope.SearchCompanyRecord(event);
+                        },400);
                 	 }
             });
         }
@@ -806,7 +809,7 @@
                         } catch (e) {
                             if (e instanceof SyntaxError) {
                                 $("#ScreenStatus").text('Unable to Save this Record');
-                                //console.log("Unable to Save this Record")
+                                console.log("Unable to Save this Record")
                             }
                         }
                     }
