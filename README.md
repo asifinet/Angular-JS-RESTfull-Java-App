@@ -31,6 +31,7 @@ somewhere in remote location.
 		N. Mapped endpoint Java Functions and Parameters.
 		O. JSON Output Test Results with SOAP UI.
 
+
 A. Technology Stack
 
 1. Web Server API.
@@ -54,6 +55,8 @@ A. Technology Stack
 	  g.JSP
 
 3.  Build Configuration using Maven pom.xml
+
+
 
  B. App Components
    
