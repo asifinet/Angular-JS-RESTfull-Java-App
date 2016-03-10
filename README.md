@@ -74,16 +74,24 @@ C. System Requirements.
 		6.SOAP UI/Curl for testing URI web service endpoints.
    
 D. HTTP Web service API CRUD Endpoints Matrix									          
-																					Supported
-		Sno. URI                                                  Function Area     Opperation        By ID      HTTP Method  	  Input        	 Output
-		============================================================================================================================================================================
-		1.  http://localhost:8080/CompRESTful/company/              Company      Add/Query/Delete     compid     GET,POST,DELETE ID/JSON Array   JSON Array,, HTTP Response 200/500  
-		2.  http://localhost:8080/CompRESTful/company/update/       Company           Update          compid     PUT			 ID/JSON Array   HTTP Response 200/500               
-		3.  http://localhost:8080/CompRESTful/company/owner/        Owner         	 Add/Query    	  compid     POST,GET   	 ID/JSON Array   JSON Array, HTTP Response 200/500 
-		4.  http://localhost:8080/CompRESTful/company/owner/del/    Owner            Delete           compid     DELETE 		 ID	         	 HTTP Response 200/500 			
-		5.  http://localhost:8080/CompRESTful/company/owner/        Owner         	 Delete 		  ownerId    DELETE 		 ID/JSON Array   HTTP Response 200/500 
-		6.  http://localhost:8080/CompRESTful/company/owner/update/ Owner            Update           ownerId    PUT             ID/JSON Array   HTTP Response 200/500
+																								  Supported
+		Sno. URI                                                  Function Area  Opperation       By ID      HTTP Method  	
+		=======================================================================================================================
+		1.  http://localhost:8080/CompRESTful/company/              Company      Add/Query/Delete compid     GET,POST,DELETE 
+		2.  http://localhost:8080/CompRESTful/company/update/       Company      Update           compid     PUT			
+		3.  http://localhost:8080/CompRESTful/company/owner/        Owner        Add/Query        compid     POST,GET   	
+		4.  http://localhost:8080/CompRESTful/company/owner/del/    Owner        Delete           compid     DELETE 		
+		5.  http://localhost:8080/CompRESTful/company/owner/        Owner        Delete 	  ownerId    DELETE 		
+		6.  http://localhost:8080/CompRESTful/company/owner/update/ Owner        Update           ownerId    PUT     
 		 
+
+		Sno. URI                                                   Input           Output
+		=============================================================================================================
+		1.  http://localhost:8080/CompRESTful/company/             ID/JSON Array   JSON Array, HTTP Response 200/500  
+		2.  http://localhost:8080/CompRESTful/company/update/      ID/JSON Array   HTTP Response 200/500               
+		3.  http://localhost:8080/CompRESTful/company/owner/       ID/JSON Array   JSON Array, HTTP Response 200/500 
+		4.  http://localhost:8080/CompRESTful/company/owner/del/   ID	           HTTP Response 200/500 			
+		5.  http://localhost:8080/CompRESTful/company/owner/       ID/JSON Array   HTTP Response 200/500
 
 E. Installation Instructions.
 
