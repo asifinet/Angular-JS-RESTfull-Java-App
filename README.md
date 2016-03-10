@@ -2,25 +2,26 @@
 Angular Js RESTfull -Server and Client Full Master Detail using HTML5,CSS3,JQuery,Angular Js, Java, RestFull Services
 Author  - Asif Muhammad
 
-/*##################################################################################################*/
+
 	RESTFull Service API and Angular JS Client (A Web based Java CRUD Application)
-/*##################################################################################################*/
+
 
 Intro :- 
 
 Java CRUD based RESTfull Web Server API and Web Service Client have been developed to provide the client 
-software an ability to access company and owner related data stored on the MySQL database server through 
-the RESTfull Web Service end-points, they may be located somewhere in remote location.
+software an ability to retrive,Maniuplate e.g INSERT,UPDATE, DELETE and Query the company and owner related 
+data stored on the MySQL database server through the RESTfull Web Service end-points, they may be located 
+somewhere in remote location.
 
 		TOC
 		------------------------------------
-		A. Technology Stack
-		B. App Components
+		A. Technology Stack.
+		B. App Components.
 		C. System Requirements.
-		D. HTTP Web service API CRUD Endpoints Matrix
+		D. HTTP Web service API CRUD Endpoints Matrix.
 		E. Installation Instructions.
 		F. App Folder Structure.
-		G. Java Core Web API depended Libraries
+		G. Java Core Web API depended Libraries.
 		H. Database Name.
 		I. Database Connectivity.
 		J. Deployment class and web files.
@@ -37,31 +38,34 @@ A. Technology Stack
 	 b.Spring 4.05
 	 c.Jackson/ JSON.
 	 d.POJO classes.
-	 e.Hibernate/JPA
+	 e.Hibernate/JPA 4.3.5.Final
 	 f.JDBC
-	 g.log4j 
-	 f.RESTful API
+	 j.log4j  1.2.17
+	 h.RESTful API
  
 
 2.Angular JS Client Technologies
-	  a.HTML5
-	  b.Angular JS 1.2
-	  c.CSS3
-	  d.JavaScript
-	  e.jQuery
-	  f.JSP
+	  a.JRE 1.8
+	  b.HTML5
+	  c.Angular JS 1.2
+	  d.CSS3
+	  e.JavaScript
+	  f.jQuery
+	  g.JSP
+
+3.  Build Configuration using Maven pom.xml
 
 B. App Components
    
    1. RESTfull Server Java Web API
-   
+      a. This Server is build and tested with the below client in order to ensure it works without any error w.r.t.o Service calls 		 from the client.
+      b. Company RESTfull Server Web API does not provide security to the webservice. Which can be easily achive providing the Spring 	 Root Context using Spring Security feature of 4.0.5
    2. RESTfull Angular JS Client 
 	  The Client is build and tested on Chrome and IE Explore version 10. 
-      To run the App need to point the URL to http://localhost:8080/CompRESTful_Client/
-
+	   To run the App need to point the URL to http://localhost:8080/CompRESTful_Client/
 
 C. System Requirements.
-   1.JDK/JRE 1.8 
+   1.JDK 1.7/JRE 1.8 
    2.MySQL 5.7 Database
    3.Tomcat Server 7.5
    3.Eclipse Version: Mars.1 Release (4.5.1)   
@@ -80,11 +84,11 @@ Sno. URI                                                  Function Area     Oppe
 6.  http://localhost:8080/CompRESTful/company/owner/update/ Owner            Update           ownerId    PUT             ID/JSON Array   HTTP Response 200/500
  
 E. Installation Instructions.
-	1. Extract the Zip file in your c: drive
+	1. Extract the AsifWorkspace.rar file in your c: drive
 	2. Open the Eclipse Mars ver.1 
 	3. Switch Workspace from file menu to open AsifWorkspace folder.
 	4. Go to server panel in eclipse and Start the Server.
-	5. Make sure there is no Errors.
+	5. Make sure there is no Errors in Error Logs.
 	6. Make Clean build from the Project Main Menu and do Clean Build (optional)
 	7. Check the URL http://localhost:8080/CompRESTful_Client/ to see if application works perfectly.
 
@@ -503,6 +507,8 @@ Output
 
 !End of the Document
 
-Thanks for reading RESTfull client Web server API.
+Note: Required liabraries are bundeled into the package in WEB-INF\lib folder in the RESTful_Server WebAPI folder.
 
-Any query suggestion w.r.t.o the Readme Document Please send it to asif_inet@hotmail.com
+Thanks for reading RESTfull Server/client Web server API.
+
+Any query suggestion and improvement w.r.t.o the Readme Document, Please send it to asif_inet@hotmail.com
