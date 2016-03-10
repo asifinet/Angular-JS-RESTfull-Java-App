@@ -476,8 +476,8 @@ O. JSON Output Test Results with SOAP UI
 
 
 2. Selected Company  
-		Request - http://localhost:8080/CompRESTful/company/48
 
+		Request - http://localhost:8080/CompRESTful/company/48
 		Output  -{"compName":"faizan","compAddress":"bukit","cityName":"kl","countryName":"my","email":"asif_inet@yahoo.com","phone":"1234567","compId":48}
 
 
@@ -490,12 +490,9 @@ O. JSON Output Test Results with SOAP UI
 		Request - http://localhost:8080/CompRESTful/company/owner/26 --Company Id
 		Output  -[{"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":187,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_iinet@hotmail.com","ownerPhone":"sdfdf","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":188,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"234234234","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":191,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmai.com","ownerPhone":"3434","ownerCompid":26,"ownerCountryName":"df"}]
 
-
-  
 5. Update the company
  
  		Request -	http://localhost:8080/CompRESTful/company/update/48 --Company Id
-
 		PUT Method
 		Input
 		Output  -	{"compName":"faizan","compAddress":"bukit","cityName":"kl","countryName":"my","email":"kashif@yahoo.com","phone":"1234567","compId":48}
@@ -506,31 +503,34 @@ O. JSON Output Test Results with SOAP UI
 		   "message": "Company added Successfully !"
 		}
 
-6.http://localhost:8080/CompRESTful/company/owner/del/148   --Owner ID
-DELETE Method
+6.DELETE Owner by Id
 
-Output
-{
-   "code": 1,
-   "message": "Owner deleted Successfully !"
-}
-7. http://localhost:8080/CompRESTful/company/owner/update/
+		Request - http://localhost:8080/CompRESTful/company/owner/del/148   --Owner ID
+		DELETE Method
+		Output
+		{
+		   "code": 1,
+		   "message": "Owner deleted Successfully !"
+		}
+		
+7. Update Owner by Owner Id 	
+		
+		Request - http://localhost:8080/CompRESTful/company/owner/update/
+		PUT Method
 
-PUT Method
+		from :-  {"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
+		to   :- {"ownerId":184,"ownerName":"Muhammad Asif","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
 
-from :-  {"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
-to   :- {"ownerId":184,"ownerName":"Muhammad Asif","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
+		Output
+		{
+   		"code": 1,
+   		"message": "Owner Updated Successfully !"
+		}
 
-Output
-{
-   "code": 1,
-   "message": "Owner Updated Successfully !"
-}
+
+
+		Note: Required liabraries are bundeled into the package in WEB-INF\lib folder in the RESTful_Server WebAPI folder.
 
 !End of the Document
-
-Note: Required liabraries are bundeled into the package in WEB-INF\lib folder in the RESTful_Server WebAPI folder.
-
-Thanks for reading RESTfull Server/client Web server API.
 
 Any query suggestion and improvement w.r.t.o the Readme Document, Please send it to asif_inet@hotmail.com
