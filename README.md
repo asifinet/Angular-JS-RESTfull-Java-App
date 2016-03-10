@@ -54,21 +54,24 @@ A. Technology Stack
 	
 	3.  Build Configuration using Maven pom.xml
 
- B. App Components
-	  1. RESTfull Server Java Web API
-	      a. This Server is build and tested with the below client.
-	      b. Company RESTfull Server Web API does not provide security to the webservice, Which can be easily achive providing the 		  Spring Root Context using Spring Security feature of 4.0.5
-	   2. RESTfull Angular JS Client 
-	      a. The Client is build and tested on Chrome and IE Explore version 10. 
-	      b. To run the App need to point the URL to http://localhost:8080/CompRESTful_Client/
+B. App Components
 
- C. System Requirements.
-	   1.JDK 1.7/JRE 1.8 
-	   2.MySQL 5.7 Database
-	   3.Tomcat Server 7.5
-	   3.Eclipse Version: Mars.1 Release (4.5.1)   
-	   4.Chrome Browser/IE above 8
-	   5.SOAP UI/Curl for testing URI web service endpoints.
+		1. RESTfull Server Java Web API
+		   a. This Server is build and tested with the below client.
+		   b. Company RESTfull Server Web API does not provide security to the webservice, Which can be easily achive 
+		       providing the Spring Root Context using Spring Security feature of 4.0.5
+		2. RESTfull Angular JS Client 
+	  	   a. The Client is build and tested on Chrome and IE Explore version 10. 
+		   b. To run the App need to point the URL to http://localhost:8080/CompRESTful_Client/
+
+C. System Requirements.
+
+		1.JDK 1.7/JRE 1.8 
+		2.MySQL 5.7 Database
+		3.Tomcat Server 7.5
+		4.Eclipse Version: Mars.1 Release (4.5.1)   
+		5.Chrome Browser/IE above 8
+		6.SOAP UI/Curl for testing URI web service endpoints.
    
 D. HTTP Web service API CRUD Endpoints Matrix									          
 																			Supported
@@ -96,193 +99,194 @@ F. App Folder Structure.
 	1. Web Server API    - CompRESTful
 	2. Angular JS Client - CompRESTful_Client
 
-C:\AsifWorkspace
-|               
-+---CompRESTful
-|   |   .classpath
-|   |   .project
-|   |   pom.xml
-|   |   
-|   +---.settings
-|   |       .jsdtscope
-|   |       org.eclipse.jdt.core.prefs
-|   |       org.eclipse.wst.common.component
-|   |       org.eclipse.wst.common.project.facet.core.xml
-|   |       org.eclipse.wst.jsdt.ui.superType.container
-|   |       org.eclipse.wst.jsdt.ui.superType.name
-|   |       
-|   +---src
-|   |   \---main
-|   |       +---java
-|   |       |   \---com
-|   |       |       \---company
-|   |       |           +---controller
-|   |       |           |       RestController.java
-|   |       |           |       
-|   |       |           +---dao
-|   |       |           |       DataDao.java
-|   |       |           |       DataDaoImpl.java
-|   |       |           |       
-|   |       |           +---model
-|   |       |           |       Company.java
-|   |       |           |       Owner.java
-|   |       |           |       Status.java
-|   |       |           |       
-|   |       |           \---services
-|   |       |                   DataServices.java
-|   |       |                   DataServicesImpl.java
-|   |       |                   
-|   |       +---resources
-|   |       |       log4j.properties
-|   |       |       
-|   |       \---webapp
-|   |           \---WEB-INF
-|   |               \---classes
-|   |                       index.jsp
-|   |                       
-|   +---target
-|   |   \---classes
-|   |       |   log4j.properties
-|   |       |   
-|   |       +---com
-|   |       |   \---company
-|   |       |       +---controller
-|   |       |       |       RestController.class
-|   |       |       |       
-|   |       |       +---dao
-|   |       |       |       DataDao.class
-|   |       |       |       DataDaoImpl.class
-|   |       |       |       
-|   |       |       +---model
-|   |       |       |       Company.class
-|   |       |       |       Owner.class
-|   |       |       |       Status.class
-|   |       |       |       
-|   |       |       \---services
-|   |       |               DataServices.class
-|   |       |               DataServicesImpl.class
-|   |       |               
-|   |       \---WEB-INF
-|   |           \---classes
-|   |                   index.jsp
-|   |                   
-|   \---WebContent
-|       +---META-INF
-|       |       MANIFEST.MF
-|       |       
-|       \---WEB-INF
-|           |   index.jsp
-|           |   spring-config.xml
-|           |   web.xml
-|           |   
-|           \---lib
-|                   antlr-2.7.7.jar
-|                   aopalliance-1.0-sources.jar
-|                   commons-logging-1.1.3.jar
-|                   dom4j-1.6.jar
-|                   gson-2.2.2.jar
-|                   hibernate-commons-annotations-4.0.4.Final.jar
-|                   hibernate-core-4.3.5.Final.jar
-|                   hibernate-entitymanager-4.3.5.Final.jar
-|                   hibernate-jpa-2.1-api-1.0.0.Final.jar
-|                   jackson-core-asl-1.9.10.jar
-|                   jackson-mapper-asl-1.9.10.jar
-|                   jandex-1.1.0.Final.jar
-|                   javassist-3.18.1-GA.jar
-|                   javax.servlet.jar
-|                   jboss-logging-3.1.3.GA.jar
-|                   jboss-logging-annotations-1.2.0.beta1.jar
-|                   jboss-transaction-api_1.2_spec-1.0.0.Final.jar
-|                   jstl-1.2.jar
-|                   log4j-1.2.17.jar
-|                   mysql-connector-java-5.1.6-bin.jar
-|                   spring-aop-4.0.5.RELEASE.jar
-|                   spring-beans-4.0.5.RELEASE.jar
-|                   spring-context-4.0.5.RELEASE.jar
-|                   spring-core-4.0.5.RELEASE.jar
-|                   spring-expression-4.0.5.RELEASE.jar
-|                   spring-jdbc-4.0.5.RELEASE.jar
-|                   spring-orm-4.0.5.RELEASE.jar
-|                   spring-tx-4.0.5.RELEASE.jar
-|                   spring-web-4.0.5.RELEASE.jar
-|                   spring-webmvc-4.0.5.RELEASE.jar
-|                   xml-apis-1.0.b2.jar
-|                   
-+---CompRESTful_Client
-|   |   .classpath
-|   |   .project
-|   |   
-|   +---.settings
-|   |       .jsdtscope
-|   |       org.eclipse.jdt.core.prefs
-|   |       org.eclipse.wst.common.component
-|   |       org.eclipse.wst.common.project.facet.core.xml
-|   |       org.eclipse.wst.jsdt.ui.superType.container
-|   |       org.eclipse.wst.jsdt.ui.superType.name
-|   |       org.eclipse.wst.ws.service.policy.prefs
-|   |       
-|   +---build
-|   |   \---classes
-|   +---src
-|   \---WebContent
-|       |   index.jsp
-|       |   
-|       +---css
-|       |       bootstrap.min.css
-|       |       bootstrap.min.css.map
-|       |       ionicons.css
-|       |       ionicons.min.css
-|       |       main.css
-|       |       
-|       +---fonts
-|       |       glyphicons-halflings-regular.eot
-|       |       glyphicons-halflings-regular.svg
-|       |       glyphicons-halflings-regular.ttf
-|       |       glyphicons-halflings-regular.woff
-|       |       glyphicons-halflings-regular.woff2
-|       |       ionicons.eot
-|       |       ionicons.svg
-|       |       ionicons.ttf
-|       |       ionicons.woff
-|       |       
-|       +---js
-|       |       angular-resource.min.js
-|       |       angular-resource.min.js.map
-|       |       angular.min.js
-|       |       angular.min.js.map
-|       |       appevents.js
-|       |       bootstrap.min.js
-|       |       controller.js
-|       |       jquery-1.9.1.min.js
-|       |       jquery-ui.min.js
-|       |       npm.js
-|       |       services.js
-|       |       
-|       +---META-INF
-|       |       MANIFEST.MF
-|       |       
-|       \---WEB-INF
-|           |   web.xml
-|           |   
-|           \---lib
-|                   javax.servlet.jar
-|                   
-+---RemoteSystemsTempFiles
-|       .project
-|       
-\---Servers
-    |   .project
-    |   
-    +---.settings
-    |       org.eclipse.wst.server.core.prefs
-    |       
-    \---Tomcat v7.0 Server at localhost-config
-            catalina.policy
-            catalina.properties
-            context.xml
-            server.xml
-            tomcat-users.xml
-            web.xml
+
+		C:\AsifWorkspace
+		|               
+		+---CompRESTful
+		|   |   .classpath
+		|   |   .project
+		|   |   pom.xml
+		|   |   
+		|   +---.settings
+		|   |       .jsdtscope
+		|   |       org.eclipse.jdt.core.prefs
+		|   |       org.eclipse.wst.common.component
+		|   |       org.eclipse.wst.common.project.facet.core.xml
+		|   |       org.eclipse.wst.jsdt.ui.superType.container
+		|   |       org.eclipse.wst.jsdt.ui.superType.name
+		|   |       
+		|   +---src
+		|   |   \---main
+		|   |       +---java
+		|   |       |   \---com
+		|   |       |       \---company
+		|   |       |           +---controller
+		|   |       |           |       RestController.java
+		|   |       |           |       
+		|   |       |           +---dao
+		|   |       |           |       DataDao.java
+		|   |       |           |       DataDaoImpl.java
+		|   |       |           |       
+		|   |       |           +---model
+		|   |       |           |       Company.java
+		|   |       |           |       Owner.java
+		|   |       |           |       Status.java
+		|   |       |           |       
+		|   |       |           \---services
+		|   |       |                   DataServices.java
+		|   |       |                   DataServicesImpl.java
+		|   |       |                   
+		|   |       +---resources
+		|   |       |       log4j.properties
+		|   |       |       
+		|   |       \---webapp
+		|   |           \---WEB-INF
+		|   |               \---classes
+		|   |                       index.jsp
+		|   |                       
+		|   +---target
+		|   |   \---classes
+		|   |       |   log4j.properties
+		|   |       |   
+		|   |       +---com
+		|   |       |   \---company
+		|   |       |       +---controller
+		|   |       |       |       RestController.class
+		|   |       |       |       
+		|   |       |       +---dao
+		|   |       |       |       DataDao.class
+		|   |       |       |       DataDaoImpl.class
+		|   |       |       |       
+		|   |       |       +---model
+		|   |       |       |       Company.class
+		|   |       |       |       Owner.class
+		|   |       |       |       Status.class
+		|   |       |       |       
+		|   |       |       \---services
+		|   |       |               DataServices.class
+		|   |       |               DataServicesImpl.class
+		|   |       |               
+		|   |       \---WEB-INF
+		|   |           \---classes
+		|   |                   index.jsp
+		|   |                   
+		|   \---WebContent
+		|       +---META-INF
+		|       |       MANIFEST.MF
+		|       |       
+		|       \---WEB-INF
+		|           |   index.jsp
+		|           |   spring-config.xml
+		|           |   web.xml
+		|           |   
+		|           \---lib
+		|                   antlr-2.7.7.jar
+		|                   aopalliance-1.0-sources.jar
+		|                   commons-logging-1.1.3.jar
+		|                   dom4j-1.6.jar
+		|                   gson-2.2.2.jar
+		|                   hibernate-commons-annotations-4.0.4.Final.jar
+		|                   hibernate-core-4.3.5.Final.jar
+		|                   hibernate-entitymanager-4.3.5.Final.jar
+		|                   hibernate-jpa-2.1-api-1.0.0.Final.jar
+		|                   jackson-core-asl-1.9.10.jar
+		|                   jackson-mapper-asl-1.9.10.jar
+		|                   jandex-1.1.0.Final.jar
+		|                   javassist-3.18.1-GA.jar
+		|                   javax.servlet.jar
+		|                   jboss-logging-3.1.3.GA.jar
+		|                   jboss-logging-annotations-1.2.0.beta1.jar
+		|                   jboss-transaction-api_1.2_spec-1.0.0.Final.jar
+		|                   jstl-1.2.jar
+		|                   log4j-1.2.17.jar
+		|                   mysql-connector-java-5.1.6-bin.jar
+		|                   spring-aop-4.0.5.RELEASE.jar
+		|                   spring-beans-4.0.5.RELEASE.jar
+		|                   spring-context-4.0.5.RELEASE.jar
+		|                   spring-core-4.0.5.RELEASE.jar
+		|                   spring-expression-4.0.5.RELEASE.jar
+		|                   spring-jdbc-4.0.5.RELEASE.jar
+		|                   spring-orm-4.0.5.RELEASE.jar
+		|                   spring-tx-4.0.5.RELEASE.jar
+		|                   spring-web-4.0.5.RELEASE.jar
+		|                   spring-webmvc-4.0.5.RELEASE.jar
+		|                   xml-apis-1.0.b2.jar
+		|                   
+		+---CompRESTful_Client
+		|   |   .classpath
+		|   |   .project
+		|   |   
+		|   +---.settings
+		|   |       .jsdtscope
+		|   |       org.eclipse.jdt.core.prefs
+		|   |       org.eclipse.wst.common.component
+		|   |       org.eclipse.wst.common.project.facet.core.xml
+		|   |       org.eclipse.wst.jsdt.ui.superType.container
+		|   |       org.eclipse.wst.jsdt.ui.superType.name
+		|   |       org.eclipse.wst.ws.service.policy.prefs
+		|   |       
+		|   +---build
+		|   |   \---classes
+		|   +---src
+		|   \---WebContent
+		|       |   index.jsp
+		|       |   
+		|       +---css
+		|       |       bootstrap.min.css
+		|       |       bootstrap.min.css.map
+		|       |       ionicons.css
+		|       |       ionicons.min.css
+		|       |       main.css
+		|       |       
+		|       +---fonts
+		|       |       glyphicons-halflings-regular.eot
+		|       |       glyphicons-halflings-regular.svg
+		|       |       glyphicons-halflings-regular.ttf
+		|       |       glyphicons-halflings-regular.woff
+		|       |       glyphicons-halflings-regular.woff2
+		|       |       ionicons.eot
+		|       |       ionicons.svg
+		|       |       ionicons.ttf
+		|       |       ionicons.woff
+		|       |       
+		|       +---js
+		|       |       angular-resource.min.js
+		|       |       angular-resource.min.js.map
+		|       |       angular.min.js
+		|       |       angular.min.js.map
+		|       |       appevents.js
+		|       |       bootstrap.min.js
+		|       |       controller.js
+		|       |       jquery-1.9.1.min.js
+		|       |       jquery-ui.min.js
+		|       |       npm.js
+		|       |       services.js
+		|       |       
+		|       +---META-INF
+		|       |       MANIFEST.MF
+		|       |       
+		|       \---WEB-INF
+		|           |   web.xml
+		|           |   
+		|           \---lib
+		|                   javax.servlet.jar
+		|                   
+		+---RemoteSystemsTempFiles
+		|       .project
+		|       
+		\---Servers
+		    |   .project
+		    |   
+		    +---.settings
+		    |       org.eclipse.wst.server.core.prefs
+		    |       
+		    \---Tomcat v7.0 Server at localhost-config
+		            catalina.policy
+		            catalina.properties
+		            context.xml
+		            server.xml
+		            tomcat-users.xml
+		            web.xml
 
 G. Java Core Web API dependend Libraries
 		1.	antlr-2.7.7.jar
