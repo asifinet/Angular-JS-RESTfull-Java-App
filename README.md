@@ -34,27 +34,27 @@ somewhere in remote location.
 
 A. Technology Stack
 
-1. Web Server API.
-	 a.Java
-	 b.Spring 4.05
-	 c.Jackson/ JSON.
-	 d.POJO classes.
-	 e.Hibernate/JPA 4.3.5.Final
-	 f.JDBC
-	 j.log4j  1.2.17
-	 h.RESTful API
- 
-
-2.Angular JS Client Technologies
-	  a.JRE 1.8
-	  b.HTML5
-	  c.Angular JS 1.2
-	  d.CSS3
-	  e.JavaScript
-	  f.jQuery
-	  g.JSP
-
-3.  Build Configuration using Maven pom.xml
+	1. Web Server API.
+		 a.Java
+		 b.Spring 4.05
+		 c.Jackson/ JSON.
+		 d.POJO classes.
+		 e.Hibernate/JPA 4.3.5.Final
+		 f.JDBC
+		 j.log4j  1.2.17
+		 h.RESTful API
+	 
+	
+	2.Angular JS Client Technologies
+		  a.JRE 1.8
+		  b.HTML5
+		  c.Angular JS 1.2
+		  d.CSS3
+		  e.JavaScript
+		  f.jQuery
+		  g.JSP
+	
+	3.  Build Configuration using Maven pom.xml
 
 
 
