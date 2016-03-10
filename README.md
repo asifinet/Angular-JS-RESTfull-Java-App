@@ -1,5 +1,5 @@
 # Angular-JS-RESTfull-Java-App
-Angular Js RESTfull -Server and Client Full Master Detail using HTML5,CSS3,JQuery,Angular Js, Java, RestFull Services
+Angular Js RESTfull -Server and Client Full Master Detail using HTML5,CSS3,JQuery,Angular Js, Java, RESTFull Services
 Author  - Asif Muhammad
 
 
@@ -73,17 +73,16 @@ C. System Requirements.
 		5.Chrome Browser/IE above 8
 		6.SOAP UI/Curl for testing URI web service endpoints.
    
-D. HTTP Web service API CRUD Endpoints Matrix									          
-																								  Supported
-		Sno. URI                                                  Function Area  Opperation       By ID      HTTP Method  	
-		=======================================================================================================================
-		1.  http://localhost:8080/CompRESTful/company/              Company      Add/Query/Delete compid     GET,POST,DELETE 
-		2.  http://localhost:8080/CompRESTful/company/update/       Company      Update           compid     PUT			
-		3.  http://localhost:8080/CompRESTful/company/owner/        Owner        Add/Query        compid     POST,GET   	
-		4.  http://localhost:8080/CompRESTful/company/owner/del/    Owner        Delete           compid     DELETE 		
-		5.  http://localhost:8080/CompRESTful/company/owner/        Owner        Delete 	  ownerId    DELETE 		
-		6.  http://localhost:8080/CompRESTful/company/owner/update/ Owner        Update           ownerId    PUT     
-		 
+D. HTTP Web service API CRUD Endpoints Matrix.
+
+											  Supported
+		Sno. URI                                               Function Area  Opperation       By ID   HTTP Method  	
+		=================================================================================================================
+		1.  http://localhost:8080/CompRESTful/company/              Company   Add/Query/Delete compid  GET,POST,DELETE 
+		2.  http://localhost:8080/CompRESTful/company/update/       Company   Update           compid  PUT					3.  http://localhost:8080/CompRESTful/company/owner/        Owner     Add/Query        compid  POST,GET   	
+		4.  http://localhost:8080/CompRESTful/company/owner/del/    Owner     Delete           compid  DELETE 		
+		5.  http://localhost:8080/CompRESTful/company/owner/        Owner     Delete 	       ownerId DELETE 		
+		6.  http://localhost:8080/CompRESTful/company/owner/update/ Owner      Update          ownerId PUT   
 
 		Sno. URI                                                   Input           Output
 		=============================================================================================================
