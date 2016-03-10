@@ -24,44 +24,50 @@
 <body ng-controller="MainController">
 <div class="MainContainer">
 
-<div class="SearchPanel"> <label for="CompanyIDS" >Company ID </label>
- <input type="text" id="CompanyIDS" value=""><div id="searchNow" class="SearchBtn" ng-click ="SearchCompanyRecord()">Search</div>
+<div class="SearchPanel">
+<div class="form-group">
+ <input type="text" id="CompanyIDS" value="" class="form-control" style="width:15%; margin:5px 1px 1px 19%" placeholder="Company ID">
+ <div id="searchNow" class=" SearchBtn" ng-click ="SearchCompanyRecord()">Search</div>
+ 
     <div id="SaveNow" class="saveBtn" ng-click ="saveCompanyRecord()">Save</div>
+       </div>
   <div class="AppTitle">Angular JS RESTfull Client v.1 </div>
  </div>
   <form id="myform" novalidate class="css-form">
-<ul class="FormPanel" >
+
+<ul class="FormPanel form-group" >
 <li>
  <label for="CompanyID">Company ID </label>
- <input type="text" id="CompanyID"   ng-model="compid" ng-pattern="/^\d+$/">
+ <input type="text" id="CompanyID" class="form-control" style="width:25%; margin:5px 1px 1px 1%" ng-model="compid" ng-pattern="/^\d+$/">
  </li>
  <li>
  <input type="hidden" id="Formstatus" ng-model="FormStatus">
   <label for="CompanyID">Name </label>
- <input type="text" id="CompanyName" ng-model="compName" required >
+ <input type="text" id="CompanyName" class="form-control" style="width:25%; margin:5px 1px 1px 1%" ng-model="compName" required >
  <span id="ErrCompanyName" class="CompError"> </span>
 <label for="CompanyAddress">Address</label>
- <input type="CompanyAddress" id="CompanyAddress" ng-model="compAddress" required >
+ <input type="CompanyAddress" id="CompanyAddress" class="form-control" style="width:25%; margin:5px 1px 1px 1%" ng-model="compAddress" required >
   <span id="ErrCompanyAddress"  class="CompError"> </span>
  </li>
  <li>
   <label for="CompanyCity">City </label>
- <input type="text" id="CompanyCity" ng-model="cityName" required>
+ <input type="text" id="CompanyCity" class="form-control" style="width:25%; margin:5px 1px 1px 1%" ng-model="cityName" required>
    <span id="ErrCompanyCity"  class="CompError"> </span>
 <label for="CompanyCountry">Country </label>
- <input type="text" id="CompanyCountry" ng-model="countryName" required>
-    <span id="ErrCompanyCountry"  class="CompError"> </span>
+ <input type="text" id="CompanyCountry" class="form-control" style="width:25%; margin:5px 1px 1px 1%" ng-model="countryName" required>
+    <span id="ErrCompanyCountry"   class="CompError"> </span>
  </li>
  <li>
  <label for="CompanyEmail">Email </label>
- <input type="email" id="CompanyEmail" ng-model="email" required >
+ <input type="email" id="CompanyEmail" class="form-control" style="width:25%; margin:5px 1px 1px 1%" ng-model="email" required >
   <span id="ErrCompanyEmail"  class="CompError"> </span>
   <label for="CompanyID">Phone </label>
- <input type="tel" id="CompanyPhone" ng-model="phone">
+ <input type="tel" id="CompanyPhone" class="form-control" style="width:25%; margin:5px 1px 1px 1%" ng-model="phone">
  
 
  </li>
 </ul>
+
  </form>
  <div id="BtnPanel" class="BtnPanel">
    <div id="addNow" class="addBtn" ng-click ="addCompanyRecord()">Add</div>
@@ -105,7 +111,7 @@
 <div id="ButtonsPanel{{pr.ownerId}}" class="Btnpanel2">
   <div id="EditOwnerNow{{ $index }}" class="editBtn S ion-edit" ng-click="EditOwnerRecord($event)"></div>
   <div id="deleteOwnerNow{{ $index }}" class="deleteBtn S ion-android-remove-circle" ng-click="removeRow($event,$index,company.ownerId)"></div>
-<div id="ErrorMessage" class="triangle-isosceles"><div id="close1" class="closesign icon ion-android-close"></div>
+<div id="ErrorMessage" class="triangle-isosceles"><div id="close1" class="closesign icon ion-android-cancel"></div>
 </div>
   </div>
     
@@ -180,6 +186,13 @@ $('#close1').click(function() {
 });
 //attached Jquery UI dragable to Dilogue Boxes of the application
 $('#AlertDilogueBox').draggable({
+  stop: function(event, ui) {
+      $('#ConfirmDilogueBox').css("display", 'block');
+  }
+});
+
+//attached Jquery UI dragable to Dilogue Boxes of the application
+$('#ConfirmDilogueBox').draggable({
   stop: function(event, ui) {
       $('#ConfirmDilogueBox').css("display", 'block');
   }
