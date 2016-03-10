@@ -31,7 +31,7 @@ somewhere in remote location.
 		N. Mapped endpoint Java Functions and Parameters.
 		O. JSON Output Test Results with SOAP UI.
 
- Technology Stack
+A. Technology Stack
 
 1. Web Server API.
 	 a.Java
@@ -55,7 +55,7 @@ somewhere in remote location.
 
 3.  Build Configuration using Maven pom.xml
 
- App Components
+ B. App Components
    
    1. RESTfull Server Java Web API
       a. This Server is build and tested with the below client in order to ensure it works without any error w.r.t.o Service calls 		 from the client.
@@ -64,7 +64,7 @@ somewhere in remote location.
 	  The Client is build and tested on Chrome and IE Explore version 10. 
 	   To run the App need to point the URL to http://localhost:8080/CompRESTful_Client/
 
- System Requirements.
+ C. System Requirements.
    1.JDK 1.7/JRE 1.8 
    2.MySQL 5.7 Database
    3.Tomcat Server 7.5
@@ -83,6 +83,7 @@ Sno. URI                                                  Function Area     Oppe
 5.  http://localhost:8080/CompRESTful/company/owner/        Owner         	 Delete 		  ownerId    DELETE 		 ID/JSON Array   HTTP Response 200/500 
 6.  http://localhost:8080/CompRESTful/company/owner/update/ Owner            Update           ownerId    PUT             ID/JSON Array   HTTP Response 200/500
  
+
 E. Installation Instructions.
 	1. Extract the AsifWorkspace.rar file in your c: drive
 	2. Open the Eclipse Mars ver.1 
