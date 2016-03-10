@@ -331,30 +331,31 @@ I. Database Connectivity.
 	
 J. Deployment class and web files.
    
-\---company
-|   |       |       +---controller
-|   |       |       |       RestController.class
-|   |       |       |       
-|   |       |       +---dao
-|   |       |       |       DataDao.class
-|   |       |       |       DataDaoImpl.class
-|   |       |       |       
-|   |       |       +---model
-|   |       |       |       Company.class
-|   |       |       |       Owner.class
-|   |       |       |       Status.class
-|   |       |       |       
-|   |       |       \---services
-|   |       |               DataServices.class
-|   |       |               DataServicesImpl.class
-|   |       |               
-|   |       \---WEB-INF
-|   |           \---classes
-|   |                   index.jsp
+		\---company
+		|   |       |       +---controller
+		|   |       |       |       RestController.class
+		|   |       |       |       
+		|   |       |       +---dao
+		|   |       |       |       DataDao.class
+		|   |       |       |       DataDaoImpl.class
+		|   |       |       |       
+		|   |       |       +---model
+		|   |       |       |       Company.class
+		|   |       |       |       Owner.class
+		|   |       |       |       Status.class
+		|   |       |       |       
+		|   |       |       \---services
+		|   |       |               DataServices.class
+		|   |       |               DataServicesImpl.class
+		|   |       |               
+		|   |       \---WEB-INF
+		|   |           \---classes
+		|   |                   index.jsp
 
 also all the dependend liabrary as above in E.
 
 K. Database tables.
+
 	1. Company
 	2. comp_owner
 	
@@ -415,77 +416,84 @@ L. Database Creation Schema Script.
 			select * from comp_owner; 
 	
 M. Tables Structure.
-1. Company
-# Field, 					Type, 			Null, Key, Default, Extra
-	comp_id, 				bigint(20), 	NO,	 PRI,	 , auto_increment
-	comp_name, 				varchar(45), NO, , , 
-	comp_address,			varchar(500), NO, , , 
-	city, 					varchar(45), NO, , , 
-	country, 				varchar(45), NO, , , 
-	email, 					varchar(45), YES, , , 
-	phone, 					varchar(45), YES, , , 
+	
+	1. Company
+	# Field, 					Type, 			Null, Key, Default, Extra
+		comp_id, 				bigint(20),  NO,	 PRI,	 , auto_increment
+		comp_name, 				varchar(45), NO, , , 
+		comp_address,				varchar(500), NO, , , 
+		city, 					varchar(45), NO, , , 
+		country, 				varchar(45), NO, , , 
+		email, 					varchar(45), YES, , , 
+		phone, 					varchar(45), YES, , , 
 
 
-2.comp_owner
-  # Field, 				Type, 			Null, Key, Default, Extra
-	owner_id			bigint(20)	NO	PRI		auto_increment
-	owner_Name			varchar(45)	NO			
-	owner_Address		varchar(500)	NO			
-	owner_City			varchar(45)	NO			
-	owner_Country		varchar(45)	NO			
-	owner_Email			varchar(45)	YES			
-	owner_Phone			varchar(45)	YES			
-	comp_id				varchar(45)	YES			
+	2.comp_owner
+	  # Field, 				Type, 			Null, Key, Default, Extra
+		owner_id			bigint(20)	NO	PRI		auto_increment
+		owner_Name			varchar(45)	NO			
+		owner_Address			varchar(500)	NO			
+		owner_City			varchar(45)	NO			
+		owner_Country			varchar(45)	NO			
+		owner_Email			varchar(45)	YES			
+		owner_Phone			varchar(45)	YES			
+		comp_id				varchar(45)	YES			
 
 
 N. Mapped Endpoint Java Functions and Parameters.
 	
-Mapped "{[/company/owner],methods=[GET],com.company.controller.RestController.getOwner()
-Mapped "{[/company],methods=[POST]com.company.controller.RestController.addCompany(com.company.model.Company)
-Mapped "{[/company/owner/{ownerid}],methods=[DELETE],com.company.model.Status com.company.controller.RestController.deleteOwner(long)
-Mapped "{[/company/owner/{compid}],methods=[GET],com.company.controller.RestController.getOwner2(long)
-Mapped "{[/company/owner/],methods=[POST],com.company.controller.RestController.addOwner(com.company.model.Owner)
-Mapped "{[/company/{compid}],methods=[DELETE],com.company.controller.RestController.deleteCompany(long)
-Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
-Mapped "{[/company/update/{compid}],methods=[PUT],com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
-Mapped "{[/company],methods=[GET]com.company.controller.RestController.getCompany()
-Mapped "{[/company/{compid}],methods=[GET],com.company.model.Company com.company.controller.RestController.getCompany(long)
-Mapped "{[/company/owner/del/{compid}],methods=[DELETE],com.company.controller.RestController.deleteOwnerById(long)
+		Mapped "{[/company/owner],methods=[GET],com.company.controller.RestController.getOwner()
+		Mapped "{[/company],methods=[POST]com.company.controller.RestController.addCompany(com.company.model.Company)
+		Mapped "{[/company/owner/{ownerid}],methods=[DELETE],com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+		Mapped "{[/company/owner/{compid}],methods=[GET],com.company.controller.RestController.getOwner2(long)
+		Mapped "{[/company/owner/],methods=[POST],com.company.controller.RestController.addOwner(com.company.model.Owner)
+		Mapped "{[/company/{compid}],methods=[DELETE],com.company.controller.RestController.deleteCompany(long)
+		Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+		Mapped "{[/company/update/{compid}],methods=[PUT],com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+		Mapped "{[/company],methods=[GET]com.company.controller.RestController.getCompany()
+		Mapped "{[/company/{compid}],methods=[GET],com.company.model.Company com.company.controller.RestController.getCompany(long)
+		Mapped "{[/company/owner/del/{compid}],methods=[DELETE],com.company.controller.RestController.deleteOwnerById(long)
 
 
 O. JSON Output Test Results with SOAP UI
 
-1.
---All companies
-Request - http://localhost:8080/CompRESTful/company/ 
-Output  - [{"compName":"ASIF","compAddress":"asif_inet@hotmail.com","cityName":"Kuala Lumpur","countryName":"Malaysia","email":"asif_inet@hotmail.com","phone":"0176205744","compId":26}]
+1. All companies
 
---Selected Company 
-2. http://localhost:8080/CompRESTful/company/48
+		Request - http://localhost:8080/CompRESTful/company/ 
 
-{"compName":"faizan","compAddress":"bukit","cityName":"kl","countryName":"my","email":"asif_inet@yahoo.com","phone":"1234567","compId":48}
-
---All owners
-3. http://localhost:8080/CompRESTful/company/owner/
-[{"ownerId":157,"ownerName":"Iftikhar Ahmed Bajwa","ownerAddress":"12-3-3 Condo","ownerCityName":"Karachi ","ownerEmail":"asif@hotmailcom","ownerPhone":"934923033","ownerCompid":19,"ownerCountryName":"Pakistan"}]
-
---Selected Owners by Company ID
-4.http://localhost:8080/CompRESTful/company/owner/26 --Company Id
-[{"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":187,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_iinet@hotmail.com","ownerPhone":"sdfdf","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":188,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"234234234","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":191,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmai.com","ownerPhone":"3434","ownerCompid":26,"ownerCountryName":"df"}]
+		Output  - [{"compName":"ASIF","compAddress":"asif_inet@hotmail.com","cityName":"Kuala Lumpur","countryName":"Malaysia","email":"asif_inet@hotmail.com","phone":"0176205744","compId":26}]
 
 
- --Update the company 
-5. http://localhost:8080/CompRESTful/company/update/48 --Company Id
+2. Selected Company  
+		Request - http://localhost:8080/CompRESTful/company/48
 
-PUT Method
-Input
-{"compName":"faizan","compAddress":"bukit","cityName":"kl","countryName":"my","email":"kashif@yahoo.com","phone":"1234567","compId":48}
+		Output  -{"compName":"faizan","compAddress":"bukit","cityName":"kl","countryName":"my","email":"asif_inet@yahoo.com","phone":"1234567","compId":48}
 
-output
-{
-   "code": 1,
-   "message": "Company added Successfully !"
-}
+
+3. All owners
+		Request -http://localhost:8080/CompRESTful/company/owner/
+		Output  -[{"ownerId":157,"ownerName":"Iftikhar Ahmed Bajwa","ownerAddress":"12-3-3 Condo","ownerCityName":"Karachi ","ownerEmail":"asif@hotmailcom","ownerPhone":"934923033","ownerCompid":19,"ownerCountryName":"Pakistan"}]
+
+4. Selected Owners by Company ID
+
+		Request - http://localhost:8080/CompRESTful/company/owner/26 --Company Id
+		Output  -[{"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":187,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_iinet@hotmail.com","ownerPhone":"sdfdf","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":188,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"234234234","ownerCompid":26,"ownerCountryName":"dfdf"},{"ownerId":191,"ownerName":"dfdf","ownerAddress":"dfdf","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmai.com","ownerPhone":"3434","ownerCompid":26,"ownerCountryName":"df"}]
+
+
+  
+5. Update the company
+ 
+ 		Request -	http://localhost:8080/CompRESTful/company/update/48 --Company Id
+
+		PUT Method
+		Input
+		Output  -	{"compName":"faizan","compAddress":"bukit","cityName":"kl","countryName":"my","email":"kashif@yahoo.com","phone":"1234567","compId":48}
+
+		output
+		{
+		   "code": 1,
+		   "message": "Company added Successfully !"
+		}
 
 6.http://localhost:8080/CompRESTful/company/owner/del/148   --Owner ID
 DELETE Method
