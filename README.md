@@ -289,15 +289,16 @@ F. App Folder Structure.
 		            web.xml
 
 G. Java Core Web API dependend Libraries
-		1.	antlr-2.7.7.jar
-		2.	aopalliance-1.0-sources.jar
-		3.	commons-logging-1.1.3.jar
-		4.	dom4j-1.6.jar
-		5.	gson-2.2.2.jar
-		6.	hibernate-commons-annotations-4.0.4.Final.jar
-		7.	hibernate-core-4.3.5.Final.jar
-		8.	hibernate-entitymanager-4.3.5.Final.jar
-		9.	hibernate-jpa-2.1-api-1.0.0.Final.jar
+
+		1. antlr-2.7.7.jar
+		2. aopalliance-1.0-sources.jar
+		3. commons-logging-1.1.3.jar
+		4. dom4j-1.6.jar
+		5. gson-2.2.2.jar
+		6. hibernate-commons-annotations-4.0.4.Final.jar
+		7. hibernate-core-4.3.5.Final.jar
+		8. hibernate-entitymanager-4.3.5.Final.jar
+		9. hibernate-jpa-2.1-api-1.0.0.Final.jar
 		10. jackson-core-asl-1.9.10.jar
 		11. jackson-mapper-asl-1.9.10.jar
 		12. jandex-1.1.0.Final.jar
