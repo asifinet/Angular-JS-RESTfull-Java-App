@@ -1,0 +1,546 @@
+2016-03-09 18:19:30 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-09 18:19:30 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Mar 09 18:19:30 SGT 2016]; root of context hierarchy
+2016-03-09 18:19:30 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-09 18:19:33 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-09 18:19:34 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-09 18:19:34 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-09 18:19:34 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-09 18:19:34 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-09 18:19:35 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-09 18:19:35 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-09 18:19:36 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-09 18:19:36 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/add],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-09 18:19:38 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-09 18:19:40 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@28bdeb57] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-09 18:19:40 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 9509 ms
+2016-03-09 21:12:18 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-09 21:12:18 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Mar 09 21:12:18 SGT 2016]; root of context hierarchy
+2016-03-09 21:12:18 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-09 21:12:19 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-09 21:12:19 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-09 21:12:19 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-09 21:12:19 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-09 21:12:19 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-09 21:12:20 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-09 21:12:20 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-09 21:12:20 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-09 21:12:20 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/add],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-09 21:12:21 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-09 21:12:21 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5254fe32] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-09 21:12:21 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 3212 ms
+2016-03-09 22:34:10 INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Mar 09 21:12:18 SGT 2016]; root of context hierarchy
+2016-03-09 22:34:14 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-09 22:34:14 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Mar 09 22:34:14 SGT 2016]; root of context hierarchy
+2016-03-09 22:34:14 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-09 22:34:15 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-09 22:34:15 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-09 22:34:15 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-09 22:34:15 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-09 22:34:15 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-09 22:34:16 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-09 22:34:16 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-09 22:34:16 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-09 22:34:16 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/add],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-09 22:34:17 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-09 22:34:17 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2568549c] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-09 22:34:17 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 3118 ms
+2016-03-09 22:34:57 INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Mar 09 22:34:14 SGT 2016]; root of context hierarchy
+2016-03-09 22:34:59 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-09 22:34:59 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Wed Mar 09 22:34:59 SGT 2016]; root of context hierarchy
+2016-03-09 22:34:59 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-09 22:35:00 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-09 22:35:00 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-09 22:35:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-09 22:35:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-09 22:35:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-09 22:35:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-09 22:35:00 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-09 22:35:01 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-09 22:35:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-09 22:35:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-09 22:35:01 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@284a6072] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-09 22:35:01 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 2173 ms
+2016-03-09 22:35:25 WARN  PageNotFound:198 - Request method 'POST' not supported
+2016-03-09 23:29:36 WARN  PageNotFound:198 - Request method 'POST' not supported
+2016-03-09 23:30:21 WARN  PageNotFound:198 - Request method 'POST' not supported
+2016-03-10 13:40:35 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 13:40:35 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 13:40:35 SGT 2016]; root of context hierarchy
+2016-03-10 13:40:35 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 13:40:37 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 13:40:39 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 13:40:39 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 13:40:39 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 13:40:39 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 13:40:41 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 13:40:41 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 13:40:41 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 13:40:41 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 13:40:45 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 13:40:47 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@32a92e] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 13:40:47 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 11899 ms
+2016-03-10 17:40:16 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 17:40:16 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 17:40:16 SGT 2016]; root of context hierarchy
+2016-03-10 17:40:16 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 17:40:19 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 17:40:22 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 17:40:22 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 17:40:22 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 17:40:22 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 17:40:24 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 17:40:24 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 17:40:25 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 17:40:25 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 17:40:27 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 17:40:30 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@32a92e] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 17:40:30 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 13641 ms
+2016-03-10 17:49:56 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 17:49:56 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 17:49:56 SGT 2016]; root of context hierarchy
+2016-03-10 17:49:56 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 17:49:57 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 17:49:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 17:50:00 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 17:50:00 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 17:50:00 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 17:50:00 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 17:50:00 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 17:50:00 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 17:50:01 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 17:50:01 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 17:50:02 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@2223c09f] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 17:50:02 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 5748 ms
+2016-03-10 17:51:06 WARN  PageNotFound:198 - Request method 'POST' not supported
+2016-03-10 17:51:47 WARN  PageNotFound:198 - Request method 'POST' not supported
+2016-03-10 17:54:49 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 17:54:49 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 17:54:49 SGT 2016]; root of context hierarchy
+2016-03-10 17:54:49 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 17:54:52 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 17:54:53 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 17:54:53 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 17:54:53 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 17:54:53 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 17:54:55 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 17:54:56 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 17:54:56 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 17:54:56 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 17:54:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 17:55:02 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@6817089d] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 17:55:02 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 13003 ms
+2016-03-10 17:57:01 INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 17:54:49 SGT 2016]; root of context hierarchy
+2016-03-10 17:57:20 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 17:57:20 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 17:57:20 SGT 2016]; root of context hierarchy
+2016-03-10 17:57:20 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 17:57:23 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 17:57:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 17:57:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 17:57:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 17:57:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 17:57:27 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 17:57:27 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 17:57:29 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 17:57:29 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 17:57:32 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 17:57:34 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@7c9d4185] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 17:57:34 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 14588 ms
+2016-03-10 18:18:31 INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 17:57:20 SGT 2016]; root of context hierarchy
+2016-03-10 18:18:44 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 18:18:44 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 18:18:44 SGT 2016]; root of context hierarchy
+2016-03-10 18:18:45 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 18:18:47 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 18:18:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 18:18:48 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 18:18:48 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 18:18:48 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 18:18:50 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 18:18:50 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 18:18:51 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 18:18:51 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 18:18:53 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 18:18:55 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5254fe32] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 18:18:55 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 10550 ms
+2016-03-10 18:55:42 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 18:55:42 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 18:55:42 SGT 2016]; root of context hierarchy
+2016-03-10 18:55:42 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 18:55:45 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 18:55:45 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 18:55:45 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 18:55:45 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 18:55:45 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 18:55:47 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 18:55:47 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 18:55:48 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 18:55:48 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 18:55:50 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 18:55:51 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@61fcca46] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 18:55:51 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 9498 ms
+2016-03-10 18:56:25 WARN  PageNotFound:198 - Request method 'DELETE' not supported
+2016-03-10 18:59:00 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 18:59:00 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 18:59:00 SGT 2016]; root of context hierarchy
+2016-03-10 18:59:00 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 18:59:02 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 18:59:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 18:59:03 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 18:59:03 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 18:59:03 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 18:59:05 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 18:59:05 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 18:59:06 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 18:59:06 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 18:59:07 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 18:59:09 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@28bdeb57] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 18:59:09 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 9626 ms
+2016-03-10 19:05:25 WARN  PageNotFound:198 - Request method 'DELETE' not supported
+2016-03-10 19:05:25 WARN  PageNotFound:198 - Request method 'DELETE' not supported
+2016-03-10 19:06:21 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 19:06:21 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 19:06:21 SGT 2016]; root of context hierarchy
+2016-03-10 19:06:21 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 19:06:23 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 19:06:25 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 19:06:25 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 19:06:25 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 19:06:25 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 19:06:26 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 19:06:26 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 19:06:27 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 19:06:27 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 19:06:29 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 19:06:31 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5254fe32] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 19:06:31 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 9592 ms
+2016-03-10 19:06:41 ERROR AssertionFailure:50 - HHH000099: an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: possible non-threadsafe access to the session
+2016-03-10 19:07:00 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 19:07:00 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 19:07:00 SGT 2016]; root of context hierarchy
+2016-03-10 19:07:00 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 19:07:02 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 19:07:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 19:07:03 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 19:07:03 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 19:07:03 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 19:07:05 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 19:07:05 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 19:07:05 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 19:07:05 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 19:07:08 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 19:07:09 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5254fe32] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 19:07:09 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 9757 ms
+2016-03-10 19:07:53 INFO  XmlWebApplicationContext:873 - Closing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 19:07:00 SGT 2016]; root of context hierarchy
+2016-03-10 19:08:05 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 19:08:05 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 19:08:05 SGT 2016]; root of context hierarchy
+2016-03-10 19:08:05 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 19:08:07 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 19:08:09 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 19:08:09 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 19:08:09 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 19:08:09 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 19:08:11 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 19:08:11 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 19:08:12 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 19:08:12 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 19:08:14 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 19:08:16 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@28bdeb57] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 19:08:16 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 11079 ms
+2016-03-10 19:08:31 WARN  PageNotFound:198 - Request method 'DELETE' not supported
+2016-03-10 19:10:49 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 19:10:50 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 19:10:50 SGT 2016]; root of context hierarchy
+2016-03-10 19:10:50 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 19:10:51 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 19:10:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 19:10:52 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 19:10:52 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 19:10:52 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 19:10:54 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 19:10:54 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 19:10:55 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 19:10:55 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 19:10:57 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 19:10:58 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@5254fe32] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 19:10:59 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 9229 ms
+2016-03-10 19:12:18 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 19:12:18 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 19:12:18 SGT 2016]; root of context hierarchy
+2016-03-10 19:12:18 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 19:12:20 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 19:12:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 19:12:21 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 19:12:21 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 19:12:21 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 19:12:22 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 19:12:22 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 19:12:23 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 19:12:23 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 19:12:25 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 19:12:27 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@28bdeb57] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 19:12:27 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 9306 ms
+2016-03-10 19:14:12 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:12 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:12 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:12 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:12 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:12 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:12 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:12 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:12 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:12 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:12 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:12 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:17 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:17 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:20 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:20 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:23 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:23 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:26 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:26 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:27 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:27 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:28 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:28 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:29 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:29 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:30 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:30 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:36 WARN  SqlExceptionHelper:144 - SQL Error: 1040, SQLState: 08004
+2016-03-10 19:14:36 ERROR SqlExceptionHelper:146 - Data source rejected establishment of connection,  message from server: "Too many connections"
+2016-03-10 19:14:50 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 19:14:50 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 19:14:50 SGT 2016]; root of context hierarchy
+2016-03-10 19:14:50 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 19:14:52 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 19:14:54 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 19:14:54 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 19:14:54 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 19:14:54 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 19:14:55 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 19:14:55 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 19:14:56 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 19:14:56 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 19:14:59 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 19:15:01 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@61fcca46] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 19:15:01 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 10864 ms
+2016-03-10 19:22:36 ERROR AssertionFailure:50 - HHH000099: an assertion failure occured (this may indicate a bug in Hibernate, but is more likely due to unsafe use of the session): org.hibernate.AssertionFailure: null id in com.company.model.Owner entry (don't flush the Session after an exception occurs)
+2016-03-10 19:23:01 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 19:23:01 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 19:23:01 SGT 2016]; root of context hierarchy
+2016-03-10 19:23:01 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 19:23:03 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 19:23:04 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 19:23:04 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 19:23:04 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 19:23:04 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 19:23:06 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 19:23:06 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 19:23:07 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 19:23:07 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 19:23:09 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 19:23:11 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@45cbafa1] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 19:23:11 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 9654 ms
+2016-03-10 21:24:55 INFO  DispatcherServlet:479 - FrameworkServlet 'mvc-dispatcher': initialization started
+2016-03-10 21:24:55 INFO  XmlWebApplicationContext:513 - Refreshing WebApplicationContext for namespace 'mvc-dispatcher-servlet': startup date [Thu Mar 10 21:24:55 SGT 2016]; root of context hierarchy
+2016-03-10 21:24:55 INFO  XmlBeanDefinitionReader:316 - Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-config.xml]
+2016-03-10 21:24:58 INFO  DriverManagerDataSource:133 - Loaded JDBC driver: com.mysql.jdbc.Driver
+2016-03-10 21:24:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+2016-03-10 21:24:59 INFO  Version:54 - HHH000412: Hibernate Core {4.3.5.Final}
+2016-03-10 21:24:59 INFO  Environment:239 - HHH000206: hibernate.properties not found
+2016-03-10 21:24:59 INFO  Environment:346 - HHH000021: Bytecode provider name : javassist
+2016-03-10 21:25:01 INFO  Dialect:145 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2016-03-10 21:25:01 INFO  LobCreatorBuilder:97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4
+2016-03-10 21:25:02 INFO  TransactionFactoryInitiator:62 - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2016-03-10 21:25:02 INFO  ASTQueryTranslatorFactory:47 - HHH000397: Using ASTQueryTranslatorFactory
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner()
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Company com.company.controller.RestController.getCompany(long)
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Company> com.company.controller.RestController.getCompany()
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/update/{ownerId}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Owner,long)
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/update/{compid}],methods=[PUT],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.updateMyCompany(com.company.model.Company,long)
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteCompany(long)
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addCompany(com.company.model.Company)
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{compid}],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.List<com.company.model.Owner> com.company.controller.RestController.getOwner2(long)
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/],methods=[POST],params=[],headers=[],consumes=[application/json],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.addOwner(com.company.model.Owner)
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/{ownerid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwner(long)
+2016-03-10 21:25:05 INFO  RequestMappingHandlerMapping:197 - Mapped "{[/company/owner/del/{compid}],methods=[DELETE],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public com.company.model.Status com.company.controller.RestController.deleteOwnerById(long)
+2016-03-10 21:25:06 INFO  HibernateTransactionManager:339 - Using DataSource [org.springframework.jdbc.datasource.DriverManagerDataSource@66a7900c] of Hibernate SessionFactory for HibernateTransactionManager
+2016-03-10 21:25:07 INFO  DispatcherServlet:498 - FrameworkServlet 'mvc-dispatcher': initialization completed in 11612 ms
