@@ -43,14 +43,16 @@ A. Technology Stack
 		 j.log4j  1.2.17
 
 
-	2.Angular JS Client Technologies
+	2.Angular JS Client Technologies.
 		  a.JRE 1.8
 		  b.HTML5
 		  c.Angular JS 1.2
 		  d.CSS3
 		  e.JavaScript
 		  f.jQuery
-		  g.JSP
+		  g.bootstrap
+		  h.Ionic
+		  i.JSP
 	
 	3.  Build Configuration using Maven pom.xml
 
