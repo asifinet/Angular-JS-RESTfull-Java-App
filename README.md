@@ -31,7 +31,6 @@ somewhere in remote location.
 		N. Mapped endpoint Java Functions and Parameters.
 		O. JSON Output Test Results with SOAP UI.
 
-
 A. Technology Stack
 
 	1. Web Server API.
@@ -43,8 +42,7 @@ A. Technology Stack
 		 f.JDBC
 		 j.log4j  1.2.17
 		 h.RESTful API
-	 
-	
+
 	2.Angular JS Client Technologies
 		  a.JRE 1.8
 		  b.HTML5
@@ -56,24 +54,21 @@ A. Technology Stack
 	
 	3.  Build Configuration using Maven pom.xml
 
-
-
  B. App Components
-   
-   1. RESTfull Server Java Web API
-      a. This Server is build and tested with the below client in order to ensure it works without any error w.r.t.o Service calls 		 from the client.
-      b. Company RESTfull Server Web API does not provide security to the webservice. Which can be easily achive providing the Spring 	 Root Context using Spring Security feature of 4.0.5
-   2. RESTfull Angular JS Client 
-	  The Client is build and tested on Chrome and IE Explore version 10. 
-	   To run the App need to point the URL to http://localhost:8080/CompRESTful_Client/
+	  1. RESTfull Server Java Web API
+	      a. This Server is build and tested with the below client.
+	      b. Company RESTfull Server Web API does not provide security to the webservice, Which can be easily achive providing the 		  Spring Root Context using Spring Security feature of 4.0.5
+	   2. RESTfull Angular JS Client 
+	      a. The Client is build and tested on Chrome and IE Explore version 10. 
+	      b. To run the App need to point the URL to http://localhost:8080/CompRESTful_Client/
 
  C. System Requirements.
-   1.JDK 1.7/JRE 1.8 
-   2.MySQL 5.7 Database
-   3.Tomcat Server 7.5
-   3.Eclipse Version: Mars.1 Release (4.5.1)   
-   4.Chrome Browser/IE above 8
-   5.SOAP UI/Curl for testing URI web service endpoints.
+	   1.JDK 1.7/JRE 1.8 
+	   2.MySQL 5.7 Database
+	   3.Tomcat Server 7.5
+	   3.Eclipse Version: Mars.1 Release (4.5.1)   
+	   4.Chrome Browser/IE above 8
+	   5.SOAP UI/Curl for testing URI web service endpoints.
    
 D. HTTP Web service API CRUD Endpoints Matrix									          
 																			Supported
@@ -88,6 +83,7 @@ Sno. URI                                                  Function Area     Oppe
  
 
 E. Installation Instructions.
+
 	1. Extract the AsifWorkspace.rar file in your c: drive
 	2. Open the Eclipse Mars ver.1 
 	3. Switch Workspace from file menu to open AsifWorkspace folder.
@@ -95,7 +91,6 @@ E. Installation Instructions.
 	5. Make sure there is no Errors in Error Logs.
 	6. Make Clean build from the Project Main Menu and do Clean Build (optional)
 	7. Check the URL http://localhost:8080/CompRESTful_Client/ to see if application works perfectly.
-
 
 F. App Folder Structure.
 	1. Web Server API    - CompRESTful
