@@ -363,7 +363,7 @@ J. Deployment class and web files.
 		|   |           \---classes
 		|   |                   index.jsp
 
-also all the dependend liabrary as above in E.
+also all the dependend liabrary as above in G.
 
 K. Database tables.
 
