@@ -66,7 +66,7 @@ B. App Components
 
 C. System Requirements.
 
-		1.JDK 1.7/JRE 1.8 
+		1.JDK 1.7, JRE 1.8 
 		2.MySQL 5.7 Database
 		3.Tomcat Server 7.5
 		4.Eclipse Version: Mars.1 Release (4.5.1)   
