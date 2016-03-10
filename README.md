@@ -504,7 +504,7 @@ O. JSON Output Test Results with SOAP UI
 		   "message": "Company added Successfully !"
 		}
 
-6.DELETE Owner by Id
+6. DELETE Owner by Id
 
 		Request - http://localhost:8080/CompRESTful/company/owner/del/148   --Owner ID
 		DELETE Method
@@ -519,8 +519,8 @@ O. JSON Output Test Results with SOAP UI
 
 		Request - http://localhost:8080/CompRESTful/company/owner/update/
 		PUT Method
-		from :-  {"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmai	
-		l.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
+		from :-  {"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmai			l.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
+		
 		to   :- {"ownerId":184,"ownerName":"Muhammad 
 			Asif","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343"
 			,"ownerCompid":26,"ownerCountryName":"dfdf"},
@@ -531,9 +531,9 @@ O. JSON Output Test Results with SOAP UI
    		"message": "Owner Updated Successfully !"
 		}
 
+Note:
 
-
-		Note: Required liabraries are bundeled into the package in WEB-INF\lib folder in the RESTful_Server WebAPI folder.
+		 Required liabraries are bundeled into the package in WEB-INF\lib folder in the RESTful_Server WebAPI folder.
 
 !End of the Document
 
