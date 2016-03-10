@@ -103,8 +103,9 @@ E. Installation Instructions.
 	7. Check the URL http://localhost:8080/CompRESTful_Client/ to see if application works perfectly.
 
 F. App Folder Structure.
-	1. Web Server API    - CompRESTful
-	2. Angular JS Client - CompRESTful_Client
+
+		1. Web Server API    - CompRESTful
+		2. Angular JS Client - CompRESTful_Client
 
 
 		C:\AsifWorkspace
@@ -330,12 +331,14 @@ G. Java Core Web API dependend Libraries
 		31. xml-apis-1.0.b2.jar
 
 H. Database Name.
-   company_db
+
+		company_db
    
 I. Database Connectivity.
-	UserID: root
-	Password: *****
-	JDBC URL: jdbc:mysql://localhost:3306/company_db
+
+		UserID: root
+		Password: *****
+		JDBC URL: jdbc:mysql://localhost:3306/company_db
 	
 J. Deployment class and web files.
    
