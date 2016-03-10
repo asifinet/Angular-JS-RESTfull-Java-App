@@ -516,11 +516,14 @@ O. JSON Output Test Results with SOAP UI
 		
 
 7. Update Owner by Owner Id 	
-		
+
 		Request - http://localhost:8080/CompRESTful/company/owner/update/
 		PUT Method
-		from :-  {"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
-		to   :- {"ownerId":184,"ownerName":"Muhammad Asif","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
+		from :-  {"ownerId":184,"ownerName":"sfdfd","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmai	
+		l.com","ownerPhone":"34332343","ownerCompid":26,"ownerCountryName":"dfdf"},
+		to   :- {"ownerId":184,"ownerName":"Muhammad 
+			Asif","ownerAddress":"dfd","ownerCityName":"dfdf","ownerEmail":"asif_inet@hotmail.com","ownerPhone":"34332343"
+			,"ownerCompid":26,"ownerCountryName":"dfdf"},
 
 		Output
 		{
