@@ -180,7 +180,7 @@
                         ownerPhone: $scope.ownerPhone,
                         ownerCompid: $scope.ownerCompid
                     	});
-                    	 },200);
+                    	 },300);
                     	 $("#NeWRecoFlag").val('0');
                          $("#ScreenStatus").text('Owner Record Sucessfully Added');
                          console.log('Saving Owner Record');
@@ -348,43 +348,49 @@
         //Method to validate the company record before saving or updating.
         $scope.validateCompany = function(event) { 
         	var validComp = true;
+        	var validComp1 = true;
+        	var validComp2 = true;
+        	var validComp3 = true;
+        	var validComp4 = true;
+        	var validComp5 = true;
+        	
         	var CompanyName = $('#CompanyName').val();
 
         	if(CompanyName||CompanyName.val){
         		 $('#CompanyName').text('');
-     			validComp = true;
+     			validComp1 = true;
         	 }else{
-        		 $('#CompanyName').text('Please enter Company Name');
-         		validComp = false;
+        		 $('#ErrCompanyName').text('Please enter Company Name');
+         		validComp1 = false;
         	 }
         	 
         	 
         	 var CompanyAddress = $('#CompanyAddress').val();
         	if(CompanyAddress||CompanyAddress.val){
         		 $('#ErrCompanyAddress').text('');
-      			validComp = true;
+      			validComp2 = true;
         	 }else{
         		 $('#ErrCompanyAddress').text('Please enter Company Address');
-         		validComp = false;
+         		validComp2 = false;
      	 }
      	 
         	 var CompanyCity = $('#CompanyCity').val();
         	if(CompanyCity||CompanyCity.val){
         		 $('#ErrCompanyCity').text('');
-       			validComp = true;
+       			validComp3 = true;
         	 }else{
         		 $('#ErrCompanyCity').text('Please enter City Name');
-         		validComp = false;
+         		validComp3 = false;
 	
       	 }
             var	CompCountry = $('#CompanyCountry').val();
         	
             if(CompCountry||CompCountry.val){
             	$('#ErrCompanyCountry').text('');
-      			validComp = true;
+      			validComp4 = true;
             }else{
             	$('#ErrCompanyCountry').text('Please enter Country Name');
-        		validComp = false;
+        		validComp4 = false;
       			
       	 }
         	
@@ -392,14 +398,21 @@
         	if(email||email.val){
         		if (validateEmail(email)) {
         			 $('#ErrCompanyEmail').text('');
-            			validComp = true;
+            			validComp5 = true;
         	 
         	 }else{
         		 $('#ErrCompanyEmail').text('Please enter correct email address');
-        		 validComp = false;
+        		 validComp5 = false;
         	 }	
        	 }
-        	return validComp;
+        	if (validComp1==false||validComp2==false||validComp3==false||validComp4==false||validComp5==false){
+          	  //$('#ErrorMessage').css("display", 'block');
+          		validComp=false;
+
+          	}else{
+          		validComp=true;
+          	}
+          	return validComp;
 }
         
         //method to validate the Owner Record before saving or updating.
@@ -480,8 +493,10 @@
         
         // Main function for navigating through records i.e Next/Previous/First/Last Record.
         $scope.RecodPaging = function(n, event) {
+     
             $scope.compid = $('#CompanyIDS').val();
-
+            $scope.recordLength = $scope.response.length;
+          
             if ((n == null || n == "") && $scope.count == 1) {
                 n = 1;
                 console.log("n is null");
@@ -495,7 +510,7 @@
             {
                //To get the lenght of record fetched from the RESTfull Server.
                 $scope.response = Company.query(function() {
-                $scope.recordLength = $scope.response.length;
+             
                     try {
                         //Assign all values for Company Master record with the required position.
                         $scope.compid = $scope.response[n].compId;
