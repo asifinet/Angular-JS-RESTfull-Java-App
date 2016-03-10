@@ -45,14 +45,15 @@ A. Technology Stack
 
 	2.Angular JS Client Technologies.
 		  a.JRE 1.8
-		  b.HTML5
+		  b.HTML5/DHTML
 		  c.Angular JS 1.2
 		  d.CSS3
 		  e.JavaScript
 		  f.jQuery
 		  g.bootstrap
 		  h.Ionic
-		  i.JSP
+		  i.JQuery-UI
+		  j.JSP
 	
 	3.  Build Configuration using Maven pom.xml
 
